@@ -1,8 +1,12 @@
-# vuems
+# vuems+typescripe
 
 ## Project setup
 ```
 npm install
+```
+### DLL分包命令
+```
+npm run dll
 ```
 
 ### Compiles and hot-reloads for development
