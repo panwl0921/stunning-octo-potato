@@ -61,9 +61,10 @@ module.exports = {
             .set('styles', path.resolve(__dirname, './src/styles'))
             .set('components', path.resolve(__dirname, './src/components'));
         // 移除 prefetch 插件
-        config.plugins.delete('prefetch-main')
+        config.plugins.delete('prefetch-main');
         // 移除 preload 插件
-        config.plugins.delete('preload-main')
+        config.plugins.delete('preload-main');
     },
+    parallel: require('os').cpus().length > 1,
     productionSourceMap: true
 }
